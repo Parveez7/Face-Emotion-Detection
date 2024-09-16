@@ -17,7 +17,7 @@ def extract_features(image):
     return feature/255.0
 
 webcam=cv2.VideoCapture(0)
-labels = {0 : 'jaa re jhat', 1 : 'thou iski maa ki', 2 : 'aleee mela baccha', 3 : 'ahaaaaa', 4 : 'hass re suvvar', 5 : 'kaiku rorai', 6 : 'surprise'}
+labels = {0: "Angry", 1: "Disgusted", 2: "Fearful", 3: "Happy", 4: "Neutral", 5: "Sad", 6: "Surprised"}
 while True:
     i,im=webcam.read()
     gray=cv2.cvtColor(im,cv2.COLOR_BGR2GRAY)
